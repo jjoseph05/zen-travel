@@ -1,0 +1,354 @@
+$skyblue: rgba(179, 212, 253, 1); /* #b3d4fd */
+$skyblu: rgba(131, 193, 245, 1); /* #b3d4fd */
+$lightgrey: rgba(230, 230, 230, 1);
+$lightorange: rgba(233,186,104, 1);
+$orange: rgba(227,166,59, 1);
+$aquablue: rgba(80, 123, 143, 1);
+
+/* ========================================================================================*
+ *  ---------->>> _BASE_STRUCTURE:PARENT LEVEL ELEMENTS <<<-----------* 
+ * ========================================================================================*/
+
+html, body {
+  background-color: rgba(230, 230, 230, 1);
+  color: #444;
+  font-family: 'Vollkorn', san-serif;
+  font-weight: 400; 
+  letter-spacing: .1em;
+  margin: 0 auto;
+  width: 100%;
+  word-spacing: .2em;
+}
+
+h1, h2, h3, h4, h5, h6, label, a { font-family: 'Josefin Slab', serif; font-weight: 400; }
+
+::selection { background:#FF5E99; color:#fff; } /* Safari */ 
+
+::-moz-selection { background: #FF5E99; } /* Firefox */ 
+
+a { text-decoration: none; color:#444; }
+
+a:hover { text-decoration: none; }
+
+nav ul, nav li, li { 
+  list-style:none; 
+  list-style-image: none; 
+  margin: 0; 
+}
+
+#container {
+  width: 100%;
+  text-align: center;
+  min-width: 1024px; 
+}
+
+/* ========================================================================================*
+ *  ---------->>> _HEADER <<<-----------* 
+ * ========================================================================================*/
+
+header {
+  width: 100%;
+  h2 {
+    font-size: 3.5em;
+    padding: .6em 0 .3em;
+    margin: 0;
+  }
+}
+
+/* ========================================================================================*
+ *  ---------->>> _NAVIGATION <<<-----------* 
+ * ========================================================================================*/
+
+nav {
+  background-color: #444;
+  -webkit-box-shadow:inset 0px .5px 10px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow:inset 0px .5px 10px 1px rgba(0,0,0,0.75);
+  box-shadow:inset 0px .5px 10px 1px rgba(0,0,0,0.75);
+  width: 100%;
+  > ul {
+    padding: 0;
+  }
+}
+
+a > li {
+  background-color: #E6EAF3;
+  border-radius: 25%;
+  display: inline-block;
+  margin: .7em .5em;
+  padding: 2.5em 2em;
+  width: 2em;
+    &:focus {
+      outline: none; 
+    }
+    &:hover {
+      color: $aquablue;
+    }
+    &:hover {
+      background-color: $lightorange;
+    }
+    &:active {
+      background-color: $orange;
+    }
+}
+
+
+/* ========================================================================================*
+ * *---------->>> _FORMS <<<-----------*
+ * ========================================================================================*/
+
+label {
+  display: inline-block;
+  font-size: 1.25em;
+  min-width: 270px;
+  position: absolute;
+  text-align: left;
+}
+
+input {
+  border: 1px solid #507B8F;
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+  font-size:1.5em;
+  margin: 1em 0;
+  padding: 1%;
+    &:focus {
+      outline: 1px solid $orange; 
+    }
+}
+
+fieldset input[type="radio"] {
+  margin: .5em;
+  position: relative;
+  right: 12px;
+  top: -10px;
+}
+
+input[type="submit"], .select-link{
+  border-radius: .25em;
+  letter-spacing: .2em;
+  padding: 1em 2em;
+    &:focus {
+      outline: none; 
+    }
+    &:hover{
+      border: 1px solid $aquablue;
+      background-color: $lightorange;
+    }
+    &:active{
+      background-color: $orange;
+    }
+}
+
+.breadcrumbs {
+  margin-bottom: 1em;
+    h2 {
+      display: inline-block;
+      font-size: 2.25em;
+      font-style: italic;
+      margin: 0;
+      padding-top: .25em;
+      text-align: left;
+    }
+}
+
+.summary {
+  background-color: lightgrey;
+  margin: 4em 3em 6em;
+  padding: 1em 0 2em;
+}
+
+.package ul {
+  margin: 0;
+  padding-bottom: 2em;
+}
+
+.package li {
+  position: relative;
+  right: 135px;
+    label {
+      padding-left: .5em;
+      top: .5em;
+    }
+    input {
+      margin: .5em 0;
+    }
+}
+
+
+/* ========================================================================================*
+ * *---------->>> _SEARCH_RESULTS <<<-----------*
+ * ========================================================================================*/
+
+.results {
+  display: inline-block;
+  margin: 0 auto;
+  max-width: 640px;
+  padding: 2em 5em 2em 4.5em;
+}
+
+.listing {
+  background-color: #9CAFAB; 
+  float: left;
+  padding:5px;
+  position: relative;
+  width: 40em;
+}
+
+.details {
+  background-color: #E6EAF3;
+  float: left;
+  width: 100%;
+}
+
+.price {
+  font-size: 1.5em;
+  padding: .75em 0;
+}
+
+.logo-container {
+  border-right: .5em solid #9CAFAB;
+  float:left;
+    &.flight-logo, &.hotel-logo  {
+      padding: 0 1em 4.9em;
+    }
+    &.car-logo {
+      padding: 0 1em .575em;
+    }
+}
+
+.company-name {
+  padding: .4em 0 0;
+}
+
+.logo {
+  height: 8em;
+  width: 8em;
+}
+
+.booking-holder {
+  background-color: #7E8E9E;
+  padding: 1em 0;
+}
+
+.booking-details {
+  color: #E6EAF3;
+  padding: .5em 0 1.5em;
+  text-align: left;
+    p {
+      display: inline-block;
+      padding-left: 1.2em;
+    }
+}
+
+.car {
+  float: right;
+  margin: 1em;
+  outline: 1px solid #9CAFAB;
+}
+
+.car-info p {
+  display: block;
+  margin-left: 14em;
+  padding: .5em;
+}
+
+.select-link {
+  background-color: #E6EAF3;
+  border: 1px solid;
+  display: inline-block;
+  font-size: 1.5em;
+  padding: .2em 4em;
+  position: relative;
+  top: 6px;
+}
+
+hr {
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+  background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+  background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+  background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+  border: 0;
+  clear:both;
+  display: inline-block;
+  height: 1px;
+  margin-top: 1em;
+  width: 100%;
+}
+
+/* ========================================================================================*
+ *  ---------->>> _RESERVATION <<<-----------* 
+ * ========================================================================================*/
+
+.booking {
+  max-width: 1024px;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.reservation {
+  display: inline-block;
+  float:left;
+  margin: .5em 1em;
+  padding: 0;
+  width: 300px;
+}
+
+.row1, .row2 {
+  display: inline-block;
+}
+
+.tsa h2 {
+  padding-top: 4em;
+}
+
+.billing-address-2 {
+  padding-top: 4em;
+}
+
+.fare > div {
+  font-size: 1.2em;
+  padding-bottom: .5em;
+    &:last-child {
+        background-color: rgba(80, 123, 143, .5);
+        padding: .2em;
+        margin: 0 4em;
+    }
+}
+
+/* ========================================================================================*
+ *  ---------->>> _DEALS <<<-----------* 
+ * ========================================================================================*/
+
+.dealcontainer {
+  margin: 8em auto;
+  min-width: 780px;
+    & li.glyph {
+      border: 1px solid $aquablue;
+    }
+}
+
+.deal {
+  background-color: lightgray;
+  border: 1px solid;
+  border-radius: 5%;
+  height: 100px;
+  margin: 1em;
+  padding: 5em 0 1em;
+  width: 200px;
+}
+
+.glyph {
+  font-size: 3em;
+  padding: 1em;
+}
+
+
+/* ========================================================================================*
+ *  ---------->>> _FOOTER <<<-----------* 
+ * ========================================================================================*/
+
+footer {
+  letter-spacing: .2em;
+  padding-top: 5%;
+}

@@ -1,0 +1,65 @@
+.booking
+	%form{action: "./finalsummary"}
+		.row1
+			.fare.reservation
+				%h2 1. Review Room and Fare
+				%div
+					%p Sun., Dec. 1, 2013
+					%p ORD 5:30am > FLL 9:32am | 3h02m NONSTOP
+				%div
+					%p Fri., Dec. 6, 2013
+					%p FLL 5:30pm > ORD 7:40pm | 3h10m NONSTOP
+				%div
+					%p Total: $199.00
+			.traveler.reservation
+				%h2 2. Guest Information
+				%div
+					%label{for: "fname"} First Name
+					%input#fname{name: "fname", type: "text"}
+				%div
+					%label{for: "mname"} Middle Name
+					%input#mname{name: "mname", type: "text"}
+				%div
+					%label{for: "lname"} Last Name
+					%input#lname{name: "lname", type: "text"}
+				%div
+					%label{for: "email"} E-mail Address
+					%input#email{name: "email", type: "text"}
+				%div
+					%label{for: "phone"} Phone Number
+					%input#phone{name: "phone", type: "text"}
+		%hr			
+		.row2
+			.billing-information.reservation
+				%h2 3. Billing Information
+				%div
+					%label{for: "card-name"} Name as appears on card
+					%input#card-name{id: "card-name", placeholder: "John Doe", type: "text"}
+				%div
+					%label{for: "card-number"} Credit Card Number
+					%input#card-number{name: "card-number", placeholder: "1234-5678-9101-2345", maxlength: "16"}
+				%div
+					%label Expiration Date
+					%input{type: "text", placeholder: "01/15"}
+			.billing-address-1.reservation
+				%h2 Billing Address
+				%div
+					%label Street line 1
+					%input{type: "text"}
+				%div
+					%label Street line 2
+					%input{type: "text"}
+				%div
+					%label Country
+					%input{type: "text"}
+			.billing-address-2.reservation
+				%div
+					%label City
+					%input{type: "text"}
+				%div
+					%label State | Region | Province
+					%input{type: "text"}
+				%div
+					%label Postal Code
+					%input{type: "text"}
+		%input{type: "submit", value: "Book"}

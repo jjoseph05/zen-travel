@@ -1,0 +1,29 @@
+.breadcrumbs
+	%hr
+	%h2 CARS > SEARCH RESULTS 
+	%h3 
+		Sort by:
+		%select{name: "filter"}
+			%option{title: "sortby", value: "----"} ----
+			%option{value: "size"} Size
+			%option{value: "rate"} Rate
+	%hr
+.results
+	.listing
+		.details
+			.logo-container.car-logo
+				.company-name
+					AVIS
+				%img.logo{src: "./images/Avis.png"}
+				.price
+					$29/day
+			.booking-holder
+				.booking-details.car-info
+					%img.car{src: "./images/honda.png"}
+					%p Compact
+					%p Honda Civic
+					%p 30mpg
+			%a{href: "./carreservation"}
+				.select-link  
+					SELECT CAR
+	%hr

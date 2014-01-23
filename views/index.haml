@@ -1,0 +1,27 @@
+.searchform
+	%form.flight-form{action: "/flightresults"}
+		.breadcrumbs
+			%hr
+			%h2 Find Flights
+			%hr
+		.destination
+			%label{for: "from"} Leaving From
+			%input#from{type: "search", placeholder: "Airport or City", autofocus: "" }
+			%label{for: "to"} Going To
+			%input#to{type: "search", placeholder: "Airport or City"}
+		.date
+			%label{for: "depart"} Depart
+			%input#depart{type: "text", class: "datepicker", placeholder: "mm/dd/yyyy"}
+			%label{for: "return"} Return
+			%input#return{type: "text", class: "datepicker", placeholder: "mm/dd/yyyy"}
+		.package
+			%ul
+				%li
+					%input#yes{type: "checkbox"}
+					%label{for: "yes"} Add Hotels to Search
+				%li
+					%input#no{type: "checkbox"}
+					%label{for: "no"} Add Cars to Search
+		.search
+			%input.search-box{type: "submit", value: "Search"}
+		

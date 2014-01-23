@@ -1,0 +1,27 @@
+.searchform
+	%form.hotel-form{action: "/hotelresults"}
+		.breadcrumbs
+			%hr
+			%h2 Find Hotels
+			%hr
+		.destination
+			%label{for: "location"} Location
+			%input#location{type: "search", placeholder: "City or Address", autofocus: "" }
+			%label{for: "guest"} Guests
+			%input#guest{type: "number", placeholder: "1"}
+		.date
+			%label{for: "checkin"} Check-in
+			%input#checkin{type: "text", class: "datepicker", placeholder: "mm/dd/yyyy"}
+			%label{for: "checkout"} Check-out
+			%input#checkout{type: "text", class: "datepicker", placeholder: "mm/dd/yyyy"}
+		.package
+			%ul
+				%li
+					%input#yes{type: "checkbox"}
+					%label{for: "yes"} Add Flights to Search
+				%li
+					%input#no{type: "checkbox"}
+					%label{for: "no"} Add Cars to Search
+		.search
+			%input.search-box{type: "submit", value: "Search"}
+		

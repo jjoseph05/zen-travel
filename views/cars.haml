@@ -1,0 +1,27 @@
+.searchform
+	%form.flight-form{action: "/carresults"}
+		.breadcrumbs
+			%hr
+			%h2 Find Cars
+			%hr	
+		.destination
+			%label{for: "pickup"} Pick Up
+			%input#pickup{type: "search", placeholder: "City or Address", autofocus: "" }
+			%label{for: "dropoff"} Drop Off
+			%input#dropoff{type: "search", placeholder: "City or Address"}
+		.date
+			%label{for: "pickupdate"} Pick Up Date
+			%input#pickupdate{type: "text", class: "datepicker", placeholder: "mm/dd/yyyy"}
+			%label{for: "dropoffdate"} Drop Off Date
+			%input#dropoffdate{type: "text", class: "datepicker", placeholder: "mm/dd/yyyy"}
+		.package
+			%ul
+				%li
+					%input#yes{type: "checkbox"}
+					%label{for: "yes"} Add Hotels to Search
+				%li
+					%input#no{type: "checkbox"}
+					%label{for: "no"} Add Flights to Search
+		.search
+			%input.search-box{type: "submit", value: "Search"}
+		

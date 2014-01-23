@@ -1,0 +1,8 @@
+/* Author: 
+	
+*/
+
+$(function() {
+  $( ".datepicker" ).datepicker();
+});
+
