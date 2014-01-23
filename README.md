@@ -1,5 +1,5 @@
 #Zen Travel#
 
-A travel site created for 8th Light's UX Challenge
+A minimalist approach to a travel site design
 
 [Zen Travel](http://zentravel.herokuapp.com/)
