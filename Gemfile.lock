@@ -35,5 +35,5 @@ DEPENDENCIES
   haml
   sass
   shotgun
-  sinatra
+  sinatra (= 1.4.4)
   sinatra-reloader
