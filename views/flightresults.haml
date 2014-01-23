@@ -1,10 +1,12 @@
 .breadcrumbs
 	%hr
-	%h2 FLIGHTS > SEARCH RESULTS Sort by:
-	%select{name: "filter"}
-		%option{title: "sortby", value: "----"} ----
-		%option{value: "airline"} Airline
-		%option{value: "price"} Price
+	%h2 FLIGHTS > SEARCH RESULTS
+	%h3
+		Sort by:
+		%select{name: "filter"}
+			%option{title: "sortby", value: "----"} ----
+			%option{value: "airline"} Airline
+			%option{value: "price"} Price
 	%hr
 .results
 	.listing
